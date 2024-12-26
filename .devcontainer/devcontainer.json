@@ -11,7 +11,8 @@
   "postCreateCommand": {
     "install-dependencies": "npm install",
     "install-express-mongoose": "npm install express mongoose",
-    "install-dev-dependencies": "npm install --save-dev nodemon"
+    "install-dev-dependencies": "npm install --save-dev nodemon",
+    "ghcr.io/devcontainers/features/mongodb:1": {}
   },
   "customizations": {
     "vscode": {
