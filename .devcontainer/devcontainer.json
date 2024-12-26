@@ -1,0 +1,26 @@
+{
+  "name": "Mongo, Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers-community/npm-features/typescript:1": {},
+    "ghcr.io/devcontainers-extra/features/jest:2": {}
+  },
+  "postCreateCommand": {
+    "install-dependencies": "npm install",
+    "install-express-mongoose": "npm install express mongoose",
+    "install-dev-dependencies": "npm install --save-dev nodemon",
+    "ghcr.io/devcontainers/features/mongodb:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "github.copilot",
+        "github.copilot-chat"
+      ]
+    }
+  }
+}
